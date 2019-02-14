@@ -1,0 +1,79 @@
+var num;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(500);
+  fill(300, 0, 0);
+  rect(100, 100, 200, 200);
+  if (mouseIsPressed) {
+    num = int(random(1, 7));
+  }
+  if (num == 1) {
+    uno();
+  }
+  if (num == 2) {
+    dos();
+  }
+  if (num == 3) {
+    tres();
+  }
+  if (num == 4) {
+    cuatro();
+  }
+  if (num == 5) {
+    cinco();
+  }
+  if (num == 6) {
+    seis();
+  }
+  console.log(num);
+
+}
+
+function uno() {
+  fill(30);
+  ellipse(200, 200, 30, 30);
+}
+
+function dos() {
+  fill(30);
+  ellipse(140, 140, 30, 30);
+  ellipse(260, 260, 30, 30);
+}
+
+function tres() {
+  fill(30);
+  ellipse(140, 140, 30, 30);
+  ellipse(200, 200, 30, 30);
+  ellipse(260, 260, 30, 30);
+}
+
+function cuatro() {
+  fill(30);
+  ellipse(140, 140, 30, 30);
+  ellipse(140, 260, 30, 30);
+  ellipse(260, 140, 30, 30);
+  ellipse(260, 260, 30, 30);
+}
+
+function cinco() {
+  fill(30);
+  ellipse(140, 140, 30, 30);
+  ellipse(200, 200, 30, 30);
+  ellipse(260, 260, 30, 30);
+  ellipse(140, 260, 30, 30);
+  ellipse(260, 140, 30, 30);
+}
+
+function seis() {
+  fill(30);
+  ellipse(160, 140, 30, 30);
+  ellipse(160, 200, 30, 30);
+  ellipse(160, 260, 30, 30);
+  ellipse(230, 140, 30, 30);
+  ellipse(230, 200, 30, 30);
+  ellipse(230, 260, 30, 30);
+}
